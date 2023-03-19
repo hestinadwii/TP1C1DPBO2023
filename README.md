@@ -13,36 +13,44 @@ Bahasa yang digunakan adalah bahasa Java pride.
 #### Human
 ->Atribut : nama, gender
 ->Method : eat(), drink(), sleep()
+
 ===> buat class baru yaitu Human karena terdapat atribut yang sama pada
 Student dan Lecturer, sehingga bisa dijadikan satu di kelas yang sama daripada
 terdapat atribut yang redundant. 
+
 ===> Laptop tidak masuk ke kelas Human karena asumsi tidak semua Human punya laptop.
 
 #### Student
 ->Atribut : nim, textbookList, laptop
 ->Method : study(), attend(), doAssignment()
+
 ===> anak dari Human karena merupakan objek yang sama
 
 #### Lecturer
 ->Atribut : NIP, markerList, laptop, assistant
 ->Method : teach(), giveAssignment(), giveScore()
+
 ===> anak dari Human karena merupakan objek yang sama
+
 ===> Lecturer composite ke Assistant (Lecturer "has a" Assistant) karena mahasiswa yang diajar dosen tersebut berbeda angkatan dengan assistant dimana Assistant ini merupakan inheritance dari Mahasiswa. 
 ex: Bu Rosa has Bang Satria as her Assistant in OOP course. Dari POV matkul OOP, Bang Satria dengan Mahasiswa yang ambil matkul OOP beda angkatan. Sehingga, Dosen has a "class Assistant" rather than "class Mahasiswa".
 
 #### BEM
 ->Atribut : divisi, jabatan, prokerList
 ->Method : doProgram(), planning(), workingOnInnovation()
+
 ===> anak dari Mahasiswa karena merupakan objek yang sama
 
 #### DPM
 ->Atribut : komisi, jabatan
 ->Method : giveAppreciation(), giveRecommendation()
+
 ===> anak dari Mahasiswa karena merupakan objek yang sama
 
 #### Assistant
 ->Atribut : matkul
 ->Method : teach(), giveHomework()
+
 ===> anak dari Mahasiswa karena merupakan objek yang sama
 
 ### DOCUMENTATION
