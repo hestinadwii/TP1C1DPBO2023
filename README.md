@@ -12,6 +12,7 @@ Bahasa yang digunakan adalah bahasa Java pride.
 ### ASSUMPTION
 #### Human
 ->Atribut : nama, gender
+
 ->Method : eat(), drink(), sleep()
 
 ===> buat class baru yaitu Human karena terdapat atribut yang sama pada
@@ -22,12 +23,14 @@ terdapat atribut yang redundant.
 
 #### Student
 ->Atribut : nim, textbookList, laptop
+
 ->Method : study(), attend(), doAssignment()
 
 ===> anak dari Human karena merupakan objek yang sama
 
 #### Lecturer
 ->Atribut : NIP, markerList, laptop, assistant
+
 ->Method : teach(), giveAssignment(), giveScore()
 
 ===> anak dari Human karena merupakan objek yang sama
@@ -37,18 +40,21 @@ ex: Bu Rosa has Bang Satria as her Assistant in OOP course. Dari POV matkul OOP,
 
 #### BEM
 ->Atribut : divisi, jabatan, prokerList
+
 ->Method : doProgram(), planning(), workingOnInnovation()
 
 ===> anak dari Mahasiswa karena merupakan objek yang sama
 
 #### DPM
 ->Atribut : komisi, jabatan
+
 ->Method : giveAppreciation(), giveRecommendation()
 
 ===> anak dari Mahasiswa karena merupakan objek yang sama
 
 #### Assistant
 ->Atribut : matkul
+
 ->Method : teach(), giveHomework()
 
 ===> anak dari Mahasiswa karena merupakan objek yang sama
